@@ -5,7 +5,7 @@
 <div class="login-box">
 
   <div class="login-logo">
-    <img class="img" src="{{asset('img/logo.png')}}" width="200">
+      <span class="brand-text font-weight-bold">WEB ADMIN</span>
   </div>
   @if (count($errors) > 0)
     @include('admin.partials.errors')

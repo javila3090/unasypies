@@ -8,11 +8,8 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-
         @foreach($homeBanners as $v)
-
-        <div class="item {{ $loop->first ? ' active' : '' }}" style="background-image: url('{{$v->image}}');">
-            <div class="overlay"></div>
+        <div class="item {{ $loop->first ? ' active' : '' }} bg-overlay" style="background-image: url('{{$v->image}}');">
             <div class="carousel-caption">
                 <h1 class="super-heading wow bounceInDown" data-wow-delay="0.5s">{{$v->title}}</h1>
                 <h1 class="super-heading wow bounceInLeft" data-wow-delay="1s">{{$v->subtitle}}</h1>
